@@ -1,0 +1,13 @@
+{% extends "forma.html" %}
+
+{% block content %}
+	<h1>{{tytul}}</h1>
+	<div class="starter-template">
+		<form action="{{ url_for('login') }}" method="post">
+			<p>Login<br /><input type=text name=username>
+			<p>Haslo<br /><input type=password name=password>
+			<p><input type=submit value=Login>
+		</form>
+	</div>
+
+{% endblock %}
